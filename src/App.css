@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/visax-r9DV-EdDmWM-unsplash.jpg);
+  background-size: cover;
+  color: #333;
+}
+
+.mainBox {
+  background-image: linear-gradient(to top, rgba(31, 31, 31, 0.849), rgba(143, 143, 143, 0.5), rgba(255, 255, 255, 0.39));
+  box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.8); 
+  color: rgb(233, 228, 228);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: background-image 3s ease-in-out;
+}
+
+.mainBox:hover {
+  color: white;
+  background-image: linear-gradient(to top, rgba(31, 31, 31, 0.9), rgba(143, 143, 143, 0.6), rgba(255, 255, 255, 0.45));
+}
+
+h1 {
+  font-size: clamp(1rem, 1.8vw, 3rem);
+}
+
+label, p{
+  font-size: clamp(0.3rem, 1.2vw, 1rem);
+}
+
+form input:not([type="checkbox"]) {
+  width: 100%;
+  height: 20%;
+  font-size: clamp(0.3rem, 1.2vw, 1rem);
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  padding: 3%;
+  border: solid 1px rgba(37, 37, 37, 0.8);
+}
+
+a{
+    color: white;
+}
+
+button {
+  background-color: rgb(14, 13, 13);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: clamp(0.5rem, 1.2vw, 1.2rem);
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 640px) {
+    h1 {
+    font-size: clamp(1.3rem, 1.8vw, 3rem);
+    }
+
+    label, p{
+    font-size: clamp(0.6rem, 1.2vw, 1rem);
+    }
+
+    form input:not([type="checkbox"]) {
+    font-size: clamp(0.6rem, 1.2vw, 1rem);
+    }
+
+    button {
+    font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+}
+}
